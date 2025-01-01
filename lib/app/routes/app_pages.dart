@@ -4,10 +4,19 @@ import '../modules/biodata_page/bindings/biodata_page_binding.dart';
 import '../modules/biodata_page/views/biodata_page_view.dart';
 import '../modules/detail_berita/bindings/detail_berita_binding.dart';
 import '../modules/detail_berita/views/detail_berita_view.dart';
+<<<<<<< Updated upstream
 import '../modules/edit_akun/bindings/edit_akun_binding.dart';
 import '../modules/edit_akun/views/edit_akun_view.dart';
 import '../modules/goverment/bindings/goverment_binding.dart';
 import '../modules/goverment/views/goverment_view.dart';
+=======
+import '../modules/detail_laporan/bindings/detail_laporan_binding.dart';
+import '../modules/detail_laporan/views/detail_laporan_view.dart';
+//import '../modules/edit_akun/bindings/edit_akun_binding.dart';
+//import '../modules/biodata_page/views/edit_akun_view.dart';
+import '../modules/government/bindings/government_binding.dart';
+import '../modules/government/views/government_view.dart';
+>>>>>>> Stashed changes
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/list_berita/bindings/list_berita_binding.dart';
@@ -88,10 +97,43 @@ class AppPages {
       page: () => const BiodataPageView(),
       binding: BiodataPageBinding(),
     ),
-    GetPage(
+    /*GetPage(
       name: _Paths.EDIT_AKUN,
       page: () => const EditAkunView(),
       binding: EditAkunBinding(),
+<<<<<<< Updated upstream
+=======
+    ),*/
+    GetPage(
+      name: _Paths.CREATE_LAPORAN,
+      page: () => const CreateLaporanView(),
+      binding: CreateLaporanBinding(),
+    ),
+    GetPage(
+      name: _Paths.LIST_PENCARIAN_LAPORAN,
+      page: () => const ListPencarianLaporanView(),
+      binding: ListPencarianLaporanBinding(),
+    ),
+    GetPage(
+      name: _Paths.DETAIL_LAPORAN,
+      page: () => DetailLaporanView(),
+      binding: DetailLaporanBinding(),
+    ),
+    GetPage(
+      name: _Paths.LIST_LAPORAN,
+      page: () => const ListLaporanView(),
+      binding: ListLaporanBinding(),
+    ),
+    GetPage(
+      name: _Paths.BERANDA,
+      page: () => const BerandaView(),
+      binding: BerandaBinding(),
+    ),
+    GetPage(
+      name: _Paths.OTP,
+      page: () => const OtpView(),
+      binding: RegisterBinding(),
+>>>>>>> Stashed changes
     ),
   ];
 }
